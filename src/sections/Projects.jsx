@@ -16,7 +16,7 @@ export default function Projects() {
               <Tag hashtag="Vite" />
             </Tags>
           </Content>
-          <CardActions visit="https://portfolio-tejas-cs-projects.vercel.app/" source="https://github.com/malay77patra/portfolio" />
+          <CardActions visit="https://tejas-chodankar.vercel.app/" source="https://github.com/malay77patra/portfolio" />
         </ProjectCard>
 
         <ProjectCard>
@@ -34,7 +34,7 @@ export default function Projects() {
               <Tag hashtag="MySQL" />
             </Tags>
           </Content>
-          <CardActions visit="https://portfolio-tejas-cs-projects.vercel.app/" source="https://github.com/TejasDotExe/LiveDoc" />
+          <CardActions visit="https://tejas-chodankar.vercel.app/" source="https://github.com/TejasDotExe/LiveDoc" />
         </ProjectCard>
 
         <ProjectCard>
@@ -52,7 +52,7 @@ export default function Projects() {
               <Tag hashtag="GSON" />
             </Tags>
           </Content>
-          <CardActions visit="https://portfolio-tejas-cs-projects.vercel.app/" source="https://github.com/TejasDotExe/Musicgram" />
+          <CardActions visit="https://tejas-chodankar.vercel.app/" source="https://github.com/TejasDotExe/Musicgram" />
         </ProjectCard>
       </Holder>
     </div>
