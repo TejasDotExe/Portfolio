@@ -9,7 +9,7 @@ import Experience from './sections/Experience'
 import Education from './sections/Education'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
-import Reviews from './sections/Reviews'
+import Certifications from './sections/Certifications'
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
       <About />
       <Skills />
       <Experience />
-      <Reviews />
+      <Certifications />
       <Education />
       <Projects />
       <Contact />

@@ -1,5 +1,5 @@
 
-export default function ReviewCard({ name, certifyingBody, duration, body }) {
+export default function CertificationCard({ name, certifyingBody, duration, body }) {
     return (
         <div className="review-card">
             <div className="user">
