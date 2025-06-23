@@ -16,7 +16,7 @@ export default function Projects() {
               <Tag hashtag="Vite" />
             </Tags>
           </Content>
-          <CardActions visit="https://tejas-chodankar.vercel.app/" source="https://github.com/malay77patra/portfolio" />
+          <CardActions visit="https://tejas-chodankar.vercel.app/" source="https://github.com/TejasDotExe/Portfolio" />
         </ProjectCard>
 
         <ProjectCard>
