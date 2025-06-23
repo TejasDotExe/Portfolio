@@ -4,25 +4,25 @@ import CertificationCard from "../components/CertificationCard";
 const reviews = [
     {
         name: "Network Security",
-        certifyingBody: "By NPTEL",
+        certifyingBody: "NPTEL",
         duration: "12 weeks",
         body: "",
     },
     {
         name: "Advanced Computer Networks",
-        certifyingBody: "By NPTEL",
+        certifyingBody: "NPTEL",
         duration: "12 weeks",
         body: "",
     },
     {
         name: "Oracle19c Database Administration Training",
-        certifyingBody: "By Aalok Institute",
+        certifyingBody: "Aalok Institute",
         duration: "26 weeks",
         body: "",
     },
     {
         name: "Post Graduate Diploma in Advanced Computing",
-        certifyingBody: "By CDAC",
+        certifyingBody: "CDAC",
         duration: "26 weeks",
         body: "",
     }

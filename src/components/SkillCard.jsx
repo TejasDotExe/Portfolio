@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 
 export default function Card({ heading = ' ', skills = [], hcolor = 'var(--clr-accent)' }) {

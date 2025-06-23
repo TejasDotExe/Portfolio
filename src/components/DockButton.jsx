@@ -1,4 +1,3 @@
-
 const spaceMap = {
     "small": "2px",
     "medium": "4px",

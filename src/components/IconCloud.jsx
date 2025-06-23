@@ -5,7 +5,6 @@ import { siPython, siReact, siJavascript, siMongodb, siExpress, siVite, siGit, s
 
 const cloudIcons = [siPython, siReact, siJavascript, siMongodb, siExpress, siVite, siGit, siGithub, siVercel, siMui, siHtml5, siCss, siTailwindcss, siSelenium, siCanva, siHeroku, siGooglegemini, siOpenai, siHuggingface, siNodedotjs, siSupabase, siBootstrap, siFigma];
 
-
 const IconCloud = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
