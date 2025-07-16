@@ -19,7 +19,7 @@ export default function About() {
         and continue learning. 
       </p>
       <p>Let’s build something great together! ✨</p>
-      <a href="https://drive.google.com/file/d/15o4FBO7Xm_OkdJPe4UYiZG26c5n4nfUW/view?usp=sharing" target='_blank'>
+      <a href="https://drive.google.com/file/d/1GG-lrX6x01i-X3gvsyXwdItLINxGNDEr/view?usp=drive_link" target='_blank'>
         <Button1>
           <SvgIcon icon={Pdf} />
           Resume
