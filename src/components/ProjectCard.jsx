@@ -47,14 +47,6 @@ function Tag({ hashtag }) {
 function CardActions({ visit, source }) {
   return (
     <div className='project-card-actions'>
-      {visit && (
-        <a href={visit} target="_blank">
-          <Button1>
-            <SvgIcon icon={Goto} />
-            Visit
-          </Button1>
-        </a>
-      )}
       {source && (
         <a href={source} target="_blank">
           <Button1>
