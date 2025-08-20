@@ -1,6 +1,4 @@
-import React from 'react'
 import Github from '../assets/icons/github.svg?react'
-import Goto from '../assets/icons/goto.svg?react'
 import { Button1 } from '../components/Buttons'
 import SvgIcon from '../components/SvgIcon';
 

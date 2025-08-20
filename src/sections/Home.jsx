@@ -1,63 +1,62 @@
-import IconCloud from '../components/IconCloud'
-import { ThemeContext } from "../context/ThemeContext"
-import { useEffect, useState, useContext } from "react"
-import Particles, { initParticlesEngine } from "@tsparticles/react"
+import IconCloud from "../components/IconCloud";
+import { ThemeContext } from "../context/ThemeContext";
+import { useEffect, useState, useContext } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { particleNasaTheme } from '../utils/utils'
-import Sparkles from '../components/Sparkles'
-import '../styles/home.css'
-import MyPhoto from '../assets/Photo.JPG'
-import SpaceBg from '../components/SpaceBg';
-
-
+import { particleNasaTheme } from "../utils/utils";
+import "../styles/home.css";
+import MyPhoto from "../assets/Photo.JPG";
+import SpaceBg from "../components/SpaceBg";
 
 export default function Home() {
-    const { theme, _ } = useContext(ThemeContext);
-    const [init, setInit] = useState(false);
+  const { theme, _ } = useContext(ThemeContext);
+  const [init, setInit] = useState(false);
 
-    useEffect(() => {
-        initParticlesEngine(async (engine) => {
-            await loadSlim(engine);
-        }).then(() => {
-            setInit(true);
-        });
-    }, []);
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
 
-    return (
-        <>
-            <div className="hero-container">
-                <div className='hero-1'>
-                    <IconCloud />
-                </div>
-                <div className='hero-2'>
-                    <div>
-                        <div>
-                            <div className='tejas-img-cont'>
-                                <img src={MyPhoto} alt="Tejas" className='tejas-img' />
-                            </div>
-                            <div>Hi, I'm Tejas<span className="wave">👋</span></div>
-                        </div>
-                        <div>
-                            <Sparkles scale={1.5} color="#ff0">
-                                <h1><span className='outlined-txt'>FULLSTACK</span></h1>
-                                <h1><span className='shine-txt'>DEVELOPER</span> &</h1>
-                                <h1><span className='highlight-txt'>CYBERSECURITY</span> ENTHUSIAST</h1>
-                            </Sparkles>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="space-container" className='space-container'>
-                    <SpaceBg />
-                    {init && (
-                        <Particles
-                            id="tsparticles"
-                            options={particleNasaTheme(theme)}
-                        />
-                    )}
-                </div>
-
+  return (
+    <>
+      <div className="hero-container">
+        <div className="hero-1">
+          <IconCloud />
+        </div>
+        <div className="hero-2">
+          <div>
+            <div>
+              <div className="tejas-img-cont">
+                <img src={MyPhoto} alt="Tejas" className="tejas-img" />
+              </div>
+              <div>
+                Hi, I'm Tejas
+              </div>
             </div>
-        </>
-    )
+            <div>
+              <h1>
+                <span className="outlined-txt">FULLSTACK</span>
+              </h1>
+              <h1>
+                <span className="shine-txt">DEVELOPER</span> &
+              </h1>
+              <h1>
+                <span className="highlight-txt">CYBERSECURITY</span> ENTHUSIAST
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div id="space-container" className="space-container">
+          <SpaceBg />
+          {init && (
+            <Particles id="tsparticles" options={particleNasaTheme(theme)} />
+          )}
+        </div>
+      </div>
+    </>
+  );
 }
