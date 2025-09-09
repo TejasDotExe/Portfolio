@@ -1,6 +1,5 @@
 import IconCloud from "../components/IconCloud";
-import { ThemeContext } from "../context/ThemeContext";
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { particleNasaTheme } from "../utils/utils";
@@ -9,7 +8,6 @@ import MyPhoto from "../assets/Photo.JPG";
 import SpaceBg from "../components/SpaceBg";
 
 export default function Home() {
-  const { theme, _ } = useContext(ThemeContext);
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -32,9 +30,7 @@ export default function Home() {
               <div className="tejas-img-cont">
                 <img src={MyPhoto} alt="Tejas" className="tejas-img" />
               </div>
-              <div>
-                Hi, I'm Tejas
-              </div>
+              <div>Hi, I'm Tejas</div>
             </div>
             <div>
               <h1>
@@ -52,9 +48,7 @@ export default function Home() {
 
         <div id="space-container" className="space-container">
           <SpaceBg />
-          {init && (
-            <Particles id="tsparticles" options={particleNasaTheme(theme)} />
-          )}
+          {init && <Particles id="tsparticles" options={particleNasaTheme()} />}
         </div>
       </div>
     </>

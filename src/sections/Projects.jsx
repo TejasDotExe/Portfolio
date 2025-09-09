@@ -1,30 +1,50 @@
-import '../styles/projects.css'
-import ProjectCard, { Holder, Content, Tags, Tag, CardActions } from '../components/ProjectCard'
+import "../styles/projects.css";
+import ProjectCard, {
+  Holder,
+  Content,
+  Tags,
+  Tag,
+  CardActions,
+} from "../components/ProjectCard";
 
 export default function Projects() {
   return (
-    <div className='section projects-section'>
+    <div className="section projects-section">
       <h2>Projects</h2>
-      <Holder>  
+      <Holder>
         <ProjectCard>
-          <img src='portfolio-website-preview.png' alt='Portfolio' />
+          <img src="portfolio-website-preview.png" alt="Portfolio" />
           <Content>
             <h3>Tejas Chodankar, Portfolio</h3>
-            <p>This is my personal portfolio website. It showcases my skills, projects, and experiences as a web developer. The portfolio is designed to be visually appealing and easy to navigate, providing a detailed introduction about myself.</p>
+            <p>
+              This is my personal portfolio website. It showcases my skills,
+              projects, and experiences as a web developer. The portfolio is
+              designed to be visually appealing and easy to navigate, providing
+              a detailed introduction about myself.
+            </p>
             <Tags>
               <Tag hashtag="React" />
               <Tag hashtag="Vite" />
             </Tags>
           </Content>
-          <CardActions visit="https://tejas-chodankar.vercel.app/" source="https://github.com/TejasDotExe/Portfolio" />
+          <CardActions
+            visit="https://tejas-chodankar.vercel.app/"
+            source="https://github.com/TejasDotExe/Portfolio"
+          />
         </ProjectCard>
 
         <ProjectCard>
-          <img src='livedoc-preview.png' alt='Livedoc' />
+          <img src="livedoc-preview.png" alt="Livedoc" />
           <Content>
             <h3>LiveDoc</h3>
             <h3>E-Healthcare Management System</h3>
-            <p>LiveDoc is a modern e-healthcare management system that streamlines patient care, appointment scheduling and medical records. Designed for clinics and hospitals, it enables secure, efficient, and connected healthcare delivery from a single digital platform.</p>
+            <p>
+              LiveDoc is a modern e-healthcare management system that
+              streamlines patient care, appointment scheduling and medical
+              records. Designed for clinics and hospitals, it enables secure,
+              efficient, and connected healthcare delivery from a single digital
+              platform.
+            </p>
             <Tags>
               <Tag hashtag="Java" />
               <Tag hashtag="Springboot" />
@@ -34,11 +54,14 @@ export default function Projects() {
               <Tag hashtag="MySQL" />
             </Tags>
           </Content>
-          <CardActions visit="https://tejas-chodankar.vercel.app/" source="https://github.com/TejasDotExe/LiveDoc" />
+          <CardActions
+            visit="https://tejas-chodankar.vercel.app/"
+            source="https://github.com/TejasDotExe/LiveDoc"
+          />
         </ProjectCard>
 
         <ProjectCard>
-          <img src='musicgram-preview.png' alt='Portfolio' />
+          <img src="musicgram-preview.png" alt="Portfolio" />
           <Content>
             <h3>Musicgram</h3>
             <h3>AI powered music player</h3>
@@ -52,9 +75,12 @@ export default function Projects() {
               <Tag hashtag="GSON" />
             </Tags>
           </Content>
-          <CardActions visit="https://tejas-chodankar.vercel.app/" source="https://github.com/TejasDotExe/Musicgram" />
+          <CardActions
+            visit="https://tejas-chodankar.vercel.app/"
+            source="https://github.com/TejasDotExe/Musicgram"
+          />
         </ProjectCard>
       </Holder>
     </div>
-  )
+  );
 }

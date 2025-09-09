@@ -17,7 +17,7 @@ export const range = (start, end, step = 1) => {
     return output;
 };
 
-export const particleNasaTheme = (theme) => ({
+export const particleNasaTheme = () => ({
     "style": {
         "position": "absolute",
         "width": "100%",
@@ -199,7 +199,7 @@ export const particleNasaTheme = (theme) => ({
             }
         },
         "color": {
-            "value": `${theme === 'dark' ? '#fff' : '#000'}`,
+            "value": '#fff',
             "animation": {
                 "h": {
                     "count": 0,
